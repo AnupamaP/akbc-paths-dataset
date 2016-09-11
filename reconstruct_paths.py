@@ -226,7 +226,7 @@ for INPUT_DIR in akbc_input_folders:
 					data_for_json.append(reconstructed_dict)
 					json.dump(data_for_json, outfile)
 					outfile.write("\n")
-					with open(INPUT_DIR+"/log.txt", 'a', 'w') as log:
+					with open(INPUT_DIR+"/log.txt", 'a') as log:
 						log.write("\nDONE!!!...\n")
 					#old format (not JSON):
 					#outfile.write(ent1ID+'\t'+ent2ID+'\t'+str('###'.join(str(x) for x in reconstructed_paths))+'\t'+label+'\n')
